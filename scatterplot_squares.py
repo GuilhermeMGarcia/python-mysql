@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 
 x = [1, 2, 3, 4, 5]
 y = [3, 2, 5, 4, 7]
+z = [100, 200, 300, 400, 700]
 
 titulo = 'Grafico de barras'
 eixox = 'Eixo X'
@@ -12,11 +13,10 @@ plt.title(titulo)
 plt.xlabel(eixox)
 plt.ylabel(eixoy)
 
-plt.scatter(x, y, label='Meus pontos', color='r', marker='p', s=200)
+plt.scatter(x, y, label='Meus pontos', color='r', marker='p', s=z)
 plt.plot(x, y, color='k', linestyle='-.')
 plt.legend()
-plt.show()
-
+plt.savefig("square.png", dpi=300)
 
 """
 Documentação oficial do Matplotlib
